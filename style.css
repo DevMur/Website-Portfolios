@@ -1,0 +1,171 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background:#b6b9c7;
+  color:#c90000;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+/*
+header unit, logo/photo link
+navbar
+navbar scroll may effect this section
+*/
+
+.s-header{
+  background-color: #01125c;
+  align-self: flex-end;
+}
+.brand span{
+  color: #fff;
+}
+.s-header ul{
+  background: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.s-header li{
+  float: left;
+}
+.s-header li a{
+  display: block;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.s-header li a:hover{
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+/*
+  end header section
+*/
+
+#marketing-header{
+  padding: 1em;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+#marketing-header img{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  float: right;
+  max-width: 50%;
+  min-height: 200pt;
+  max-height: 220pt;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+#marketing-header p{
+  clear: left;
+}
+
+
+#query{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+#submission-form {
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+
+
+
+
+
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#c9e6ff;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+.title-style{
+  background:#01125c;
+  min-height: 200pt;
+  max-height: min-content;
+}
+.title-style h3{
+  font-size: 7pc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+  margin-bottom: auto;
+  margin-left: 2%;
+}
+
+/* FORM STYLES */
+#submission-form form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:20px;
+  background: rgb(255, 0, 0);
+}
+
+#submission-form form label{
+  display:block;
+}
+
+#submission-form form p{
+  margin:0;
+  color: #01125c;
+}
+
+#submission-form form button, #submission-form form input, #submission-form form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+#submission-form form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+#submission-form form button:hover,#submission-form form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
